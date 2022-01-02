@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+input.custom-rounded {
+  border-radius: 0.5rem;
+}
+
 .spinner {
   -webkit-animation: rotator 1.4s linear infinite;
           animation: rotator 1.4s linear infinite;
