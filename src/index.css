@@ -6,6 +6,11 @@ input.custom-rounded {
   border-radius: 0.5rem;
 }
 
+.custom-card-image .card.image-full:before {
+  border-radius: 0.5rem;
+  opacity: 0.45;
+}
+
 .spinner {
   -webkit-animation: rotator 1.4s linear infinite;
           animation: rotator 1.4s linear infinite;
