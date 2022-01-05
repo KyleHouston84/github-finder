@@ -32,7 +32,6 @@ export const GithubProvider = ({ children }) => {
     });
 
     const { items } = await response.json();
-    console.log("🚀 ~ file: GithubContext.js ~ line 34 ~ searchUsers ~ items", items)
     dispatch({
       type: 'GET_USERS',
       payload: items
@@ -53,7 +52,6 @@ export const GithubProvider = ({ children }) => {
       window.location = '/notfound'
     } else {
       const data = await response.json();
-      console.log("🚀 ~ file: GithubContext.js ~ line 54 ~ getUser ~ data", data)
       dispatch({
         type: 'GET_USER',
         payload: data
