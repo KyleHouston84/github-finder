@@ -6,12 +6,12 @@ import { searchUsers } from '../../context/github/GithubActions';
 function UserSearch() {
   const [text, setText] = useState('');
 
-  const { users, dispatch, clearUsers } = useContext(GithubContext);
+  const { users, dispatch } = useContext(GithubContext);
   const { setAlert } = useContext(AlertContext);
 
   const handleChange = (event) => setText(event.target.value);
 
-  const handleClick = () => clearUsers();
+  const handleClick = () => dispatch({ type: 'CLEAR_USERS'});
 
   const handleSubmit = async (event) => {
     event.preventDefault();
