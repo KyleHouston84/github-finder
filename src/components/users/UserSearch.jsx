@@ -13,6 +13,9 @@ function UserSearch() {
 
   const handleClick = () => dispatch({ type: 'CLEAR_USERS'});
 
+  /**
+   * Searches for users based on the text input.
+   */
   const handleSubmit = async (event) => {
     event.preventDefault();
 
